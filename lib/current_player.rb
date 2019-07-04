@@ -11,18 +11,17 @@ end
 
 
 
-# def current_player(board)
-#   turn = turn_count(board)
-#     if turn % 2 == 0
-#       "X"
-#     else
-#       "O"
-#     end
-# end
-
-# bonus - refactoring #current_player method to use .even? and ternary operator
-
 def current_player(board)
   turn = turn_count(board)
-    turn = turn.even? ? "X" : "O"
+    if turn % 2 == 0
+      "X"
+    else
+      "O"
+    end
 end
+
+# bonus - refactoring #current_player method to use .even? and ternary operator
+# def current_player(board)
+#   turn = turn_count(board)
+#     turn = turn.even? ? "X" : "O"
+# end
