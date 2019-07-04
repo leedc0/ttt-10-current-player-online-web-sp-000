@@ -1,4 +1,4 @@
-
+# Method that tracks turns played 
 def turn_count(board)
   turn = 0
   board.each do |space|
@@ -9,6 +9,7 @@ def turn_count(board)
     return turn
 end
 
+# Method that returns "X" or "O" based on #turn_count
 # def current_player(board)
 #   turn = turn_count(board)
 #     if turn % 2 == 0
